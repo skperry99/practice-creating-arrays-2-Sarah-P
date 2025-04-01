@@ -15,3 +15,18 @@ Task 3: Populate the Array with a for Loop
 3. Log your results to confirm the array contains the correct values: 0, 10, 20,
 30, 40.
 */
+
+let firstArray = Array(7);
+console.log(firstArray);
+
+firstArray = Array(7).fill("Hello");
+console.log(firstArray);
+
+firstArray = firstArray.fill("Goodbye", 4,6);
+console.log(firstArray);
+
+let loopArray = Array(5);
+for (let i = 0; i < loopArray.length; i++) {
+    loopArray[i] = i * 10;
+   }
+console.log(loopArray);
